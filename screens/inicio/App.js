@@ -7,7 +7,7 @@ export default function App() {
     console.disableYellowBox = true;
     return (
     <View style={{backgroundColor: 'black', width: '100%', height:'100%'}}>
-        <Text style={{color:'white', padding: 30}}>olaaa</Text>
+        <Text style={{color:'white', padding: 30}}>olaaaaaaa</Text>
         <Videos text="Populares na Netflix"></Videos>
     </View>
     )
