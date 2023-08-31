@@ -1,22 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
-import React, {useState, useEffect, useCallback} from 'react'
+import React, {useState, useEffect} from 'react'
 import { StyleSheet, Text, View } from 'react-native';
 import Videos from './videos';
-import * as SplashScreen from 'expo-splash-screen';
-import { useFonts,Lato_100Thin_Italic } from '@expo-google-fonts/lato';
+//import * as SplashScreen from 'expo-splash-screen';
+//import { useFonts,Lato_100Thin_Italic } from '@expo-google-fonts/lato';
 
-SplashScreen.preventAutoHideAsync();
+//SplashScreen.preventAutoHideAsync();
 
 const data = [
     { id: '1', picture: require('../../assets/images/boasvindasgrifo.png') },
-    { id: '2', picture: require('../../assets/images/boasvindasgrifo.png') },
-    { id: '3', picture: require('../../assets/images/boasvindasgrifo.png') },
-    { id: '4', picture: require('../../assets/images/boasvindasgrifo.png') },
-    { id: '5', picture: require('../../assets/images/boasvindasgrifo.png') },
+    { id: '2', picture: require('../../assets/images/luau.png') },
+    { id: '3', picture: require('../../assets/images/trf.png') },
+    { id: '4', picture: require('../../assets/images/crimi.png') },
+    { id: '5', picture: require('../../assets/images/pzteam.png') },
   ];
 
 export default function App() {
-    console.disableYellowBox = true;
+    /*console.disableYellowBox = true;
 
     const [fontsLoaded] = useFonts({
         'Montserrat-Medium': require('../../assets/fonts/Montserrat-Medium.ttf'),
@@ -30,7 +30,7 @@ export default function App() {
     
       if (!fontsLoaded) {
         return null;
-      }
+      }*/
 
     return (
     <View style={{backgroundColor: 'rgb(25,25,25)', width: '100%', height:'100%'}}>
@@ -39,7 +39,7 @@ export default function App() {
             <Text style={style.imeflix1}>IME</Text>
             <Text style={style.imeflix2}>FLIX</Text>
         </View>
-        <Videos data= {data} text="Populares na Imeflix"></Videos>
+        <Videos data= {data} text="GRIFO"></Videos>
     </View>
     )
 }
